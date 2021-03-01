@@ -45,9 +45,9 @@ class MainActivity : AppCompatActivity() {
         var buselect = view as Button
         when(buselect.id){
             buMultiply.id -> {op = "*"}
-            buDivide.id -> {op = "*"}
-            buMultiply.id -> {op = "*"}
-            buMultiply.id -> {op = "*"}
+            buDivide.id -> {op = "/"}
+            buminus.id -> {op = "-"}
+            buplus.id -> {op = "+"}
         }
     }
 
