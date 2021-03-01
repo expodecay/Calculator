@@ -34,6 +34,7 @@
                 android:layout_width="30pt"
                 android:layout_height="30pt"
                 android:text="AC"
+                android:onClick="acEvent"
                 android:layout_marginRight="2pt"
                 ></Button>
             <Button
@@ -102,6 +103,7 @@
                 android:layout_width="30pt"
                 android:layout_height="30pt"
                 android:text="%"
+                android:onClick="percentEvent"
                 android:layout_marginRight="2pt"
                 ></Button>
         </TableRow>

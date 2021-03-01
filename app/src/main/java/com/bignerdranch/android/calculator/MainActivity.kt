@@ -62,4 +62,15 @@ class MainActivity : AppCompatActivity() {
         }
         editText.setText(result.toString())
     }
+
+    fun acEvent(view: View) {
+        editText.setText("0")
+        isNewOp = true
+    }
+
+    fun percentEvent(view: View) {
+        var no = editText.text.toString().toDouble()/100
+        editText.setText(no.toString())
+        isNewOp = true
+    }
 }
