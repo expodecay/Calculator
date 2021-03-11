@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     fun numberEvent(view: View) {
         if(isNewOp)
             editText.setText("")
+
         isNewOp = false
         var buclick = editText.text.toString()
         var buselect = view as Button
@@ -49,6 +50,7 @@ class MainActivity : AppCompatActivity() {
             buminus.id -> {op = "-"}
             buplus.id -> {op = "+"}
         }
+        editText.setText(op)
     }
 
     fun equalEvent(view: View) {
@@ -60,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             "/" -> {result = oldNumber.toDouble() / newNumber.toDouble()}
             "-" -> {result = oldNumber.toDouble() - newNumber.toDouble()}
         }
-        editText.setText(result.toString())
+        resultText.setText(result.toString())
     }
 
     fun acEvent(view: View) {
